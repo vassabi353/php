@@ -21,10 +21,10 @@ declare(strict_types=1);
 $a = 5;
 $b = 8;
 $swap($a, $b);
-
-// Проверки
-var_dump($a); // 8
-var_dump($b); // 5
+echo '5 === $b: ', (5 === $b) ? 'true' : 'false';
+echo "<br>";
+echo '8 === $a: ', (8 === $a) ? 'true' : 'false';
 	?>
 </body>
+
 </html>
