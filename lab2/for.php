@@ -12,16 +12,19 @@ declare(strict_types=1);
 </head>
 <body>
 	<h1>Цикл for</h1>
-	<?php
+	<pre>
+<?php
 	/*
 	ЗАДАНИЕ
 	- Используя цикл for выведите в столбик Нечётные числа от 1 до 50
 	*/
 	for ($i = 1; $i <= 50; $i++) {
         if ($i % 2 != 0) {
-            echo "<p>$i</p>";
+            echo $i."  ";
         }
     }
 	?>
+	</pre>
 </body>
+
 </html>
