@@ -47,7 +47,7 @@ $code = '<?=$login?>';
     return $hasUpper && $hasLower && $hasDigit;
 }
 
-echo "<p>Пароль " . (isPasswordStrong($password) ? 'надёжный' : 'ненадёжный') . "</p>";
+echo "<p>Пароль " . (isPasswordStrong($password) ? 'отличный' : 'ненадёжный') . "</p>";
 
 $name = mb_convert_case($name, MB_CASE_TITLE, 'UTF-8');
 
@@ -61,4 +61,5 @@ echo htmlspecialchars($code, ENT_NOQUOTES, 'UTF-8');
 
 ?>
 </body>
+
 </html>
