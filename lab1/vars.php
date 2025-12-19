@@ -1,6 +1,6 @@
 <?php
-$name = 'Анжелика';
-$age = 20;
+$name = 'Максим';
+$age = 19;
 ?>
 <!DOCTYPE html>
 <html lang="ru">
