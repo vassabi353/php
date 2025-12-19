@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 // ЗАДАНИЕ 1
 $now = time();
-$birthday = strtotime('2005-07-05'); // Ваш день рождения
+$birthday = strtotime('2005-12-21'); // Ваш день рождения
 
 // Исправлен порядок: сначала getdate(), потом извлечение часа
 $dateInfo = getdate($now);
@@ -49,7 +49,7 @@ echo "<p>Сегодня {$day} {$months[$month]} {$year} года, {$dayOfWeek} 
 
 // Расчёт времени до дня рождения
 $nowDate = new DateTime();
-$birthThisYear = new DateTime("{$nowDate->format('Y')}-07-05"); // подставьте ваш ММ-ДД
+$birthThisYear = new DateTime("{$nowDate->format('Y')}-12-21"); // подставьте ваш ММ-ДД
 
 if ($birthThisYear < $nowDate) {
     $birthThisYear->modify('+1 year');
@@ -59,4 +59,5 @@ $interval = $nowDate->diff($birthThisYear);
 
 echo "<p>До моего дня рождения осталось</p>\n";
 echo "<p>{$interval->days} дней, {$interval->h} часов, {$interval->i} минут и {$interval->s} секунд</p>\n";
+
 ?>
