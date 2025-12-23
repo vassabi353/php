@@ -1,6 +1,19 @@
 <?php
-declare(strict_types=1);
-function getTable(int $cols = 10, int $rows = 10, string $color = 'yellow'): int
+  declare(strict_types=1);
+  
+  /**
+ * Генерирует таблицу умножения с заданными параметрами
+ * 
+ * Функция создает HTML-таблицу умножения с заголовками строк и столбцов.
+ * Использует статический счетчик для отслеживания количества вызовов функции.
+ * 
+ * @param int $cols Количество столбцов таблицы (по умолчанию 10)
+ * @param int $rows Количество строк таблицы (по умолчанию 10)
+ * @param string $color Цвет фона заголовков в формате CSS (по умолчанию 'yellow')
+ * @return int Количество вызовов функции (используется статический счетчик)
+ */
+
+  function getTable(int $cols = 10, int $rows = 10, string $color = 'yellow'): int
 {
     static $count = 0;
     $count++;
@@ -21,7 +34,7 @@ function getTable(int $cols = 10, int $rows = 10, string $color = 'yellow'): int
         }
         echo "</tr>";
     }
-    echo "</table>";
+    echo "</table><hr>";
 
     return $count;
 }
@@ -52,15 +65,12 @@ function getTable(int $cols = 10, int $rows = 10, string $color = 'yellow'): int
     <h1>Таблица умножения</h1>
 
     <?php
-    // ЗАДАНИЕ 3, 5: Вызовы функции с разным количеством параметров
     getTable(5, 5, '#a0d0ff');   // 3 параметра
     getTable(7);                 // 1 параметр 
     getTable(6, 4);              // 2 параметра
-    getTable();                  // без параметров
+    $c = getTable();             // без параметров
 
-    // Вывод общего числа вызовов
-    $totalCalls = getTable(); // ещё один вызов, чтобы получить актуальное значение $count
-    echo "<p><strong>Таблица была отрисована: " . ($totalCalls - 1) . "</strong></p>";
+    echo "<p><strong>Таблица была отрисована " . $c . " раза</strong></p>";
     ?>
 </body>
 </html>

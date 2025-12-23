@@ -1,5 +1,5 @@
 <?php
-$age = 30;
+$age = 19;
 ?>
 <!DOCTYPE html>
 <html lang="ru">

@@ -1,5 +1,5 @@
 <?php
- $day = 5;
+ $day = 7;
 
 ?>
 <!DOCTYPE html>

@@ -55,7 +55,6 @@ $leftMenu = [
 	*/
             echo "<ul class=\"menu\">";
             foreach ($leftMenu as $item) {
-                // для каждой позиции создаем элемент списка с ссылкой
                 echo "<li><a href='" . htmlspecialchars($item['href']) . "'>" . htmlspecialchars($item['link']) . "</a></li>";
             }
             echo "</ul>";

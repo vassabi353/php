@@ -29,9 +29,9 @@ $opel = [
 <body>
 	<h1>Массивы</h1>
 	<?php
-	echo "bmw - {$bmw['model']}-{$bmw['speed, km/h']}-{$bmw['doors']}-{$bmw['year']}<br>";
-	echo "toyota - {$toyota['model']}-{$toyota['speed, km/h']}-{$toyota['doors']}-{$toyota['year']}<br>";
-    echo "opel - {$opel['model']}-{$opel['speed, km/h']}-{$opel['doors']}-{$opel['year']}<br>";
+	echo "bmw - {$bmw['model']} - {$bmw['speed, km/h']} - {$bmw['doors']} - {$bmw['year']}<br>";
+	echo "toyota - {$toyota['model']} - {$toyota['speed, km/h']} - {$toyota['doors']} - {$toyota['year']}<br>";
+    echo "opel - {$opel['model']} - {$opel['speed, km/h']} - {$opel['doors']} - {$opel['year']}<br>";
 	?>
 
 </body>

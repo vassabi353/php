@@ -1,5 +1,5 @@
 <?php
-define('my_const', 'Привет!');
+define("CONSTANTA", "Константа1");
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -12,13 +12,13 @@ define('my_const', 'Привет!');
 <body>
 	<h1>Константы</h1>
 	<?php
-	if (defined('my_const')){
-	    echo "Значение константы my_const:". my_const."<br>";
+	if (defined("CONSTANTA")){
+	    echo "Значение константы CONSTANTA: ". CONSTANTA."<br>";
 	} else{
-	    echo "Значение константы my_const не определена.<br>";
+	    echo "Значение константы CONSTANTA не определена.<br>";
 	}
-	echo "Текущая версия PHP:". PHP_VERSION."<br>";
-	echo "Директория скрипта:". __DIR__."<br>";
+	echo "Текущая версия PHP: ". PHP_VERSION."<br>";
+	echo "Директория скрипта: ". __DIR__."<br>";
 	
 	?>
 </body>
