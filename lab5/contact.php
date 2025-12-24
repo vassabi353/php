@@ -22,7 +22,7 @@
             $subject = htmlspecialchars(trim($_POST['subject']));
             $body = htmlspecialchars(trim($_POST['body']));
 
-            $to = 'semnovalika@gmail.com';
+            $to = 'vassabi353@mail.ru';
 
             $headers = "From: admin@center.ogu\r\n"; 
             $headers .= "Reply-To: admin@center.ogu\r\n";

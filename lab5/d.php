@@ -1,11 +1,11 @@
 <?php
-define('DATA_FILE', 'users.txt');
+define('DATA_FILE', 'dd/users.txt');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $fname = htmlspecialchars(trim($_POST['fname']));
     $lname = htmlspecialchars(trim($_POST['lname']));
 
-    $line = $fname . ';' . $lname . PHP_EOL;
+    $line = $fname . ' ' . $lname . PHP_EOL;
 
     $file = fopen(DATA_FILE, 'a');
     if ($file) {
