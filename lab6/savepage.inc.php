@@ -1,5 +1,5 @@
 <?php
-$currentPage = $_SERVER['REQUEST_URI'];
+$currentPage = $_SERVER['PHP_SELF'];
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
