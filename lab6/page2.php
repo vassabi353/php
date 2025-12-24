@@ -1,4 +1,9 @@
 <?php
+declare(strict_types=1);
+
+ini_set('session.use_trans_sid', 0);
+ini_set('session.use_only_cookies', 1);
+
 session_start();
 
 // Подключаем код для сохранения информации о странице в сессии
